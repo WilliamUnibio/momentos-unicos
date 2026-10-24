@@ -1,0 +1,582 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#71836c">
+
+  <title>Momentos Únicos | Floristería en Tunja, Boyacá</title>
+
+  <meta name="description" content="En Momentos Únicos creamos ramos, arreglos florales, orquídeas y detalles para celebrar en Tunja, Boyacá. Cotiza tu ramo personalizado por WhatsApp.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Momentos Únicos | Flores para tus mejores momentos">
+  <meta property="og:description" content="Ramos, arreglos y diseños florales personalizados en Tunja, Boyacá.">
+  <meta property="og:image" content="img/portada.jpg">
+  <meta property="og:locale" content="es_CO">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ENCABEZADO -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#inicio" aria-label="Momentos Únicos, inicio">
+        <span class="brand-mark" aria-hidden="true">✿</span>
+        <span class="brand-copy">
+          <strong>Momentos Únicos</strong>
+          <small>FLORISTERÍA · TUNJA</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+        aria-controls="main-nav"
+        type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#ocasiones">Ocasiones</a>
+        <a href="#disena-tu-ramo">Diseña tu ramo</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a
+        class="header-whatsapp"
+        href="https://wa.me/573142639759"
+        target="_blank"
+        rel="noopener noreferrer">
+        WhatsApp <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- PORTADA -->
+    <section class="hero" id="inicio">
+      <div class="hero-image" role="img" aria-label="Arreglo floral romántico"></div>
+      <div class="hero-shade"></div>
+
+      <div class="container hero-content reveal">
+        <span class="eyebrow eyebrow-light">
+          FLORES PARA SENTIR, REGALAR Y RECORDAR
+        </span>
+
+        <h1>Hay momentos que merecen <em>flores únicas.</em></h1>
+
+        <p>
+          Diseñamos detalles florales que hablan por ti.
+          Encuentra el tuyo o crea un ramo a tu medida.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#catalogo">
+            Explorar catálogo
+          </a>
+
+          <a class="button button-light" href="#disena-tu-ramo">
+            Diseñar mi ramo
+          </a>
+        </div>
+
+        <div class="hero-note">
+          <span aria-hidden="true">✦</span>
+          Hecho con cariño en Tunja, Boyacá
+        </div>
+      </div>
+    </section>
+
+    <!-- VENTAJAS -->
+    <section class="section trust-strip" aria-label="Ventajas">
+      <div class="container trust-grid">
+
+        <div>
+          <span class="trust-icon">✿</span>
+          <strong>Detalles con intención</strong>
+          <small>Diseños para cada ocasión</small>
+        </div>
+
+        <div>
+          <span class="trust-icon">♡</span>
+          <strong>Atención personalizada</strong>
+          <small>Te ayudamos a elegir</small>
+        </div>
+
+        <div>
+          <span class="trust-icon">✉</span>
+          <strong>Pedido sencillo</strong>
+          <small>Consulta por WhatsApp</small>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="section" id="catalogo">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">ENCUENTRA TU DETALLE</span>
+          <h2>Flores para cada <em>sentimiento</em></h2>
+          <p>
+            Explora nuestros productos y pregúntanos por disponibilidad,
+            colores y personalización.
+          </p>
+        </div>
+
+        <div class="catalog-tools reveal">
+
+          <label class="search-box">
+            <span aria-hidden="true">⌕</span>
+            <input
+              id="product-search"
+              type="search"
+              placeholder="Buscar rosas, orquídeas, quince años..."
+              aria-label="Buscar productos">
+          </label>
+
+          <div class="filters" id="product-filters" aria-label="Filtrar por categoría">
+            <button class="filter active" data-filter="todos" aria-pressed="true">Todos</button>
+            <button class="filter" data-filter="ramos" aria-pressed="false">Ramos</button>
+            <button class="filter" data-filter="arreglos" aria-pressed="false">Cajas y canastas</button>
+            <button class="filter" data-filter="plantas" aria-pressed="false">Plantas</button>
+            <button class="filter" data-filter="orquideas" aria-pressed="false">Orquídeas</button>
+            <button class="filter" data-filter="quince-anos" aria-pressed="false">Quince años</button>
+            <button class="filter" data-filter="eventos" aria-pressed="false">Eventos y bodas</button>
+            <button class="filter" data-filter="condolencias" aria-pressed="false">Condolencias</button>
+            <button class="filter" data-filter="complementos" aria-pressed="false">Complementos</button>
+          </div>
+        </div>
+
+        <!-- JavaScript inserta las tarjetas de productos aquí -->
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+
+        <p class="catalog-note">
+          Los precios identificados como “Consultar precio” se confirman
+          directamente por WhatsApp. Los precios numéricos son referencias
+          editables y deben validarse antes de publicar.
+        </p>
+      </div>
+    </section>
+
+    <!-- OCASIONES -->
+    <section class="section occasions-section" id="ocasiones">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">UN DETALLE PARA CADA HISTORIA</span>
+          <h2>¿Qué quieres <em>celebrar?</em></h2>
+          <p>Elige la ocasión y encuentra inspiración para ese momento especial.</p>
+        </div>
+
+        <div class="occasion-grid">
+
+          <button class="occasion-card reveal" data-occasion="ramos" type="button">
+            <img src="img/rosarosada.jpg" alt="Rosas rosadas para cumpleaños" loading="lazy">
+            <span>Cumpleaños</span>
+            <small>Un motivo para sonreír</small>
+          </button>
+
+          <button class="occasion-card reveal" data-occasion="ramos" type="button">
+            <img src="img/rosaroja.jpg" alt="Rosas rojas para aniversarios" loading="lazy">
+            <span>Aniversarios</span>
+            <small>Amor en cada pétalo</small>
+          </button>
+
+          <button class="occasion-card reveal" data-occasion="eventos" type="button">
+            <img src="img/gerbera.jpg" alt="Flores para bodas y eventos" loading="lazy">
+            <span>Bodas y eventos</span>
+            <small>Un día inolvidable</small>
+          </button>
+
+          <button class="occasion-card reveal" data-occasion="condolencias" type="button">
+            <img src="img/corona150.jpg" alt="Arreglo floral de condolencias" loading="lazy">
+            <span>Condolencias</span>
+            <small>Acompañar con respeto</small>
+          </button>
+
+          <button class="occasion-card reveal" data-occasion="quince-anos" type="button">
+            <img src="img/buquet130.jpg" alt="Bouquet para quince años" loading="lazy">
+            <span>Quince años</span>
+            <small>Un sueño que florece</small>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DISEÑADOR DE RAMOS -->
+    <section class="section builder-section" id="disena-tu-ramo">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">TU IDEA, TUS FLORES</span>
+          <h2>Diseña un ramo <em>a tu manera</em></h2>
+          <p>
+            Elige flores, cantidades y tamaño. Visualiza una propuesta
+            y solicita una cotización personalizada.
+          </p>
+        </div>
+
+        <div class="builder-layout">
+
+          <div class="builder-controls reveal">
+
+            <label for="bouquet-type">¿Qué quieres crear?</label>
+            <select id="bouquet-type">
+              <option value="mano">Ramo de mano</option>
+              <option value="mesa">Arreglo de mesa</option>
+            </select>
+
+            <label for="bouquet-size">Tamaño del arreglo</label>
+            <select id="bouquet-size">
+              <option value="pequeno">Pequeño</option>
+              <option value="mediano" selected>Mediano</option>
+              <option value="grande">Grande</option>
+            </select>
+
+            <h3>1. Escoge tus flores</h3>
+            <p class="builder-help">Usa + o − para ajustar las cantidades.</p>
+
+            <div id="flower-options" class="flower-options"></div>
+
+            <label for="bouquet-wrap">Papel o presentación</label>
+            <select id="bouquet-wrap">
+              <option value="0">Sin envoltura adicional</option>
+              <option value="8000">Papel elegante (+ $8.000)</option>
+              <option value="15000">Envoltura premium (+ $15.000)</option>
+            </select>
+
+            <div class="builder-summary">
+              <span>Flores seleccionadas</span>
+              <strong id="flower-count">0</strong>
+
+              <span>Cotización estimada</span>
+              <strong id="bouquet-price">$0</strong>
+
+              <small id="builder-message" aria-live="polite">
+                Selecciona flores para comenzar.
+              </small>
+            </div>
+
+            <button class="button button-primary builder-button" id="send-bouquet" type="button">
+              Solicitar cotización por WhatsApp ↗
+            </button>
+
+            <button class="button button-outline builder-download" id="download-bouquet" type="button">
+              Descargar diseño PNG ↓
+            </button>
+
+            <p class="catalog-note">
+              Cotización orientativa. El valor final depende de la disponibilidad,
+              el diseño y la confirmación de la floristería.
+            </p>
+
+          </div>
+
+          <div class="bouquet-preview reveal">
+            <span class="eyebrow">TU CREACIÓN</span>
+            <h3>Así va tu arreglo</h3>
+
+            <div class="preview-canvas-wrap">
+              <canvas
+                id="bouquet-canvas"
+                width="700"
+                height="760"
+                aria-label="Vista previa ilustrativa de tu ramo">
+              </canvas>
+            </div>
+
+            <p id="preview-description" aria-live="polite">
+              Selecciona flores para comenzar a diseñar.
+            </p>
+
+            <p class="preview-disclaimer">
+              La vista previa es una representación orientativa,
+              no una fotografía exacta del producto final.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section class="section about-section" id="nosotros">
+      <div class="container about-grid">
+
+        <div class="about-image reveal">
+          <img
+            src="img/portada.jpg"
+            alt="Inspiración floral de Momentos Únicos"
+            loading="lazy"
+            onerror="this.style.display='none'">
+          <span class="about-stamp">Flores<br>con amor</span>
+        </div>
+
+        <div class="about-copy reveal">
+          <span class="eyebrow">SOMOS MOMENTOS ÚNICOS</span>
+          <h2>Los pequeños detalles hacen <em>grandes recuerdos.</em></h2>
+
+          <p>
+            En Momentos Únicos creemos que las flores tienen una forma
+            especial de decir lo que a veces las palabras no alcanzan.
+            Creamos propuestas florales para acompañar celebraciones,
+            expresar cariño y estar presentes en los momentos importantes.
+          </p>
+
+          <p>
+            Queremos ayudarte a elegir un detalle que se sienta personal,
+            especial y hecho con dedicación.
+          </p>
+
+          <div class="values-list">
+            <span>♡ Atención cercana</span>
+            <span>✿ Creatividad floral</span>
+            <span>❀ Detalles personalizados</span>
+          </div>
+
+          <a class="text-link" href="#contacto">Conversemos sobre tu idea ↗</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CÓMO PEDIR -->
+    <section class="section how-section" id="como-pedir">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">FÁCIL Y PERSONALIZADO</span>
+          <h2>¿Cómo hacer tu <em>pedido?</em></h2>
+          <p>Te acompañamos desde la idea hasta la confirmación de tu arreglo.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal">
+            <span>01</span>
+            <h3>Elige o diseña</h3>
+            <p>Explora el catálogo o crea tu propio ramo.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <span>02</span>
+            <h3>Escríbenos</h3>
+            <p>Envía tu consulta por WhatsApp y cuéntanos la ocasión.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <span>03</span>
+            <h3>Confirma tu pedido</h3>
+            <p>Verificamos disponibilidad, precio y opciones de pago.</p>
+          </article>
+
+          <article class="step-card reveal">
+            <span>04</span>
+            <h3>Coordina la entrega</h3>
+            <p>Definimos contigo la recogida o entrega disponible.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section testimonials-section" id="testimonios">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">PALABRAS QUE NOS INSPIRAN</span>
+          <h2>Momentos que florecen <em>en la memoria</em></h2>
+          <p>Cuando tengas reseñas reales de tus clientes, podremos mostrarlas aquí.</p>
+        </div>
+
+        <div class="testimonial-placeholder reveal">
+          <span aria-hidden="true">♡</span>
+          <p>
+            Tu experiencia puede inspirar a otros. Muy pronto compartiremos
+            aquí las opiniones de nuestros clientes.
+          </p>
+          <small>Espacio reservado para testimonios reales</small>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section gallery-section" id="galeria">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <span class="eyebrow">UN VISTAZO A NUESTRO MUNDO</span>
+          <h2>Detalles que hablan <em>por sí solos</em></h2>
+          <p>Alimenta esta galería con tus trabajos reales y comparte tus creaciones favoritas.</p>
+        </div>
+
+        <div class="gallery-grid">
+
+          <a class="gallery-item reveal" href="img/buquet60.jpg" target="_blank" rel="noopener">
+            <img src="img/buquet60.jpg" alt="Bouquet floral" loading="lazy">
+            <span>Ramos</span>
+          </a>
+
+          <a class="gallery-item reveal" href="img/caja160.jpg" target="_blank" rel="noopener">
+            <img src="img/caja160.jpg" alt="Caja floral" loading="lazy">
+            <span>Arreglos</span>
+          </a>
+
+          <a class="gallery-item reveal" href="img/rosaroja.jpg" target="_blank" rel="noopener">
+            <img src="img/rosaroja.jpg" alt="Rosas rojas" loading="lazy">
+            <span>Rosas</span>
+          </a>
+
+          <a class="gallery-item reveal" href="img/girasol.jpg" target="_blank" rel="noopener">
+            <img src="img/girasol.jpg" alt="Girasol" loading="lazy">
+            <span>Flores</span>
+          </a>
+
+          <a class="gallery-item reveal" href="img/canasta200.jpg" target="_blank" rel="noopener">
+            <img src="img/canasta200.jpg" alt="Canasta floral" loading="lazy">
+            <span>Canastas</span>
+          </a>
+
+          <a class="gallery-item reveal" href="img/corona150.jpg" target="_blank" rel="noopener">
+            <img src="img/corona150.jpg" alt="Corona floral" loading="lazy">
+            <span>Homenajes</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section contact-section" id="contacto">
+      <div class="container contact-grid">
+
+        <div class="contact-copy reveal">
+          <span class="eyebrow">ESTAMOS PARA AYUDARTE</span>
+          <h2>Hagamos algo <em>inolvidable.</em></h2>
+          <p>
+            Cuéntanos qué tienes en mente y te ayudaremos a encontrar
+            las flores perfectas.
+          </p>
+
+          <div class="contact-details">
+
+            <div>
+              <span class="contact-symbol">⌖</span>
+              <div>
+                <strong>Ubicación</strong>
+                <p>Tunja, Boyacá, Colombia</p>
+                <small>Agrega aquí la dirección exacta del local.</small>
+              </div>
+            </div>
+
+            <div>
+              <span class="contact-symbol">◷</span>
+              <div>
+                <strong>Horarios</strong>
+                <p>Consulta nuestros horarios por WhatsApp.</p>
+              </div>
+            </div>
+
+            <div>
+              <span class="contact-symbol">☏</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <p>+57 314 263 9759</p>
+              </div>
+            </div>
+
+          </div>
+
+          <a
+            class="button button-primary"
+            href="https://wa.me/573142639759?text=Hola%2C%20Momentos%20%C3%9Anicos.%20Quisiera%20informaci%C3%B3n."
+            target="_blank"
+            rel="noopener noreferrer">
+            Hablar por WhatsApp ↗
+          </a>
+
+          <div class="social-links">
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+            <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+          </div>
+        </div>
+
+        <div class="map-wrap reveal">
+          <iframe
+            title="Mapa de Tunja, Boyacá"
+            src="https://www.google.com/maps?q=Tunja%2C%20Boyac%C3%A1%2C%20Colombia&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+
+          <p>
+            El mapa muestra Tunja de forma general. Sustituye la ubicación
+            por la dirección exacta cuando la tengas.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <a class="brand brand-footer" href="#inicio">
+        <span class="brand-mark" aria-hidden="true">✿</span>
+        <span class="brand-copy">
+          <strong>Momentos Únicos</strong>
+          <small>FLORES QUE HABLAN POR TI</small>
+        </span>
+      </a>
+
+      <p>Creando detalles para acompañar tus momentos especiales en Tunja.</p>
+      <a href="#inicio" class="back-top">Volver arriba ↑</a>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="current-year"></span> Momentos Únicos. Todos los derechos reservados.</span>
+      <span>Hecho con cariño en Boyacá, Colombia.</span>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/573142639759?text=Hola%2C%20Momentos%20%C3%9Anicos.%20Quisiera%20hacer%20un%20pedido."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a Momentos Únicos por WhatsApp">
+
+    <span aria-hidden="true">☏</span>
+    <span class="floating-label">¿Hablamos?</span>
+  </a>
+
+</body>
+</html>
